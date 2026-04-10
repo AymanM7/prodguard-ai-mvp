@@ -13,7 +13,20 @@ Hackathon MVP for turning rough feature ideas into a structured PRD package with
   - export to Markdown and printable PDF flow
 
 ## Run locally
-Open `index.html` in a modern browser.
+
+**Dev server (recommended)**
+
+```powershell
+cd "c:\Users\Ayman\OneDrive\Desktop\PNC"
+npm install
+npm run dev
+```
+
+Vite prints a local URL (default [http://localhost:5173](http://localhost:5173)) and can open the browser automatically.
+
+**Without Node**
+
+Open `index.html` in a modern browser, or use `python -m http.server` from this folder.
 
 ## Key files
 - `index.html` - UI layout
