@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProdGuard AI MVP</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">ProdGuard AI MVP</p>
+          <h1>Ship Better PRDs, Faster</h1>
+          <p class="subtitle">
+            Turn rough ideas into a structured, compliance-aware PRD package with stories, acceptance criteria,
+            risk flags, and launch-ready exports.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <p id="scorePill" class="score-pill">Quality Score: --</p>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <div class="column">
+          <section class="card">
+            <div class="card-head">
+              <h2>Idea Intake</h2>
+              <span class="chip">Step 1</span>
+            </div>
+            <label for="ideaInput">Feature Idea / Notes</label>
+            <textarea id="ideaInput" rows="10" placeholder="Paste rough feature concept, notes, or transcript"></textarea>
+
+            <label for="notesUpload">Upload Notes (.txt, .md, .json)</label>
+            <input id="notesUpload" type="file" accept=".txt,.md,.json" multiple />
+            <p id="uploadMeta" class="hint"></p>
+
+            <div class="actions">
+              <button id="generateBtn">Generate PRD Package</button>
+              <button id="loadFintechExampleBtn" class="secondary">Load Fintech Sample</button>
+              <button id="loadHealthcareExampleBtn" class="secondary">Load Healthcare Sample</button>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-head">
+              <h2>Risk and Compliance Flags</h2>
+              <span class="chip warning">Step 2</span>
+            </div>
+            <ul id="riskList" class="risk-list"></ul>
+          </section>
+        </div>
+
+        <div class="column wide">
+          <section class="card">
+            <div class="card-head">
+              <h2>Generated PRD Package (Editable)</h2>
+              <span class="chip">Step 3</span>
+            </div>
+            <textarea id="outputEditor" rows="30" placeholder="Generated output appears here and can be edited"></textarea>
+            <div class="actions">
+              <button id="exportMdBtn" class="secondary">Export Markdown</button>
+              <button id="exportPdfBtn" class="secondary">Export PDF</button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
