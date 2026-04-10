@@ -1,22 +1,22 @@
 * { box-sizing: border-box; }
 
 :root {
-  --bg: #0b1020;
-  --bg-soft: #121933;
-  --card: #151e3a;
-  --card-2: #111936;
-  --line: #2a355f;
-  --text: #eaf0ff;
-  --text-soft: #a8b3d7;
-  --accent: #6ee7b7;
-  --accent-2: #60a5fa;
-  --warn: #fca5a5;
+  --bg: #061429;
+  --bg-soft: #0c2140;
+  --card: #0f2850;
+  --card-2: #0a2142;
+  --line: #204473;
+  --text: #edf4ff;
+  --text-soft: #b4c9e7;
+  --accent: #f58025;
+  --accent-2: #f8a35f;
+  --warn: #ffc4a3;
 }
 
 body {
   margin: 0;
   font-family: "Segoe UI", Inter, Arial, sans-serif;
-  background: radial-gradient(circle at top right, #1b2452 0%, var(--bg) 45%);
+  background: radial-gradient(circle at top right, #124077 0%, var(--bg) 48%);
   color: var(--text);
 }
 
@@ -35,7 +35,7 @@ body {
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(96, 165, 250, 0.12), rgba(110, 231, 183, 0.03));
+  background: linear-gradient(180deg, rgba(245, 128, 37, 0.18), rgba(18, 64, 119, 0.12));
 }
 
 .eyebrow {
@@ -91,15 +91,15 @@ body {
 
 .chip {
   font-size: 12px;
-  border: 1px solid #3a4a84;
+  border: 1px solid #3e679c;
   padding: 4px 10px;
   border-radius: 999px;
-  color: #b8c4ee;
+  color: #d5e5ff;
 }
 
 .chip.warning {
-  border-color: #7f3b4a;
-  color: #ffbdc6;
+  border-color: #ad5f2a;
+  color: #ffd7ba;
 }
 
 label {
@@ -113,8 +113,8 @@ textarea,
 input[type="file"] {
   width: 100%;
   border-radius: 10px;
-  border: 1px solid #34457e;
-  background: #0f1733;
+  border: 1px solid #2a5488;
+  background: #081a36;
   color: var(--text);
   padding: 11px 12px;
 }
@@ -123,7 +123,7 @@ textarea:focus,
 input[type="file"]:focus {
   outline: none;
   border-color: var(--accent-2);
-  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+  box-shadow: 0 0 0 2px rgba(245, 128, 37, 0.25);
 }
 
 .hint {
@@ -141,8 +141,8 @@ input[type="file"]:focus {
 
 button {
   border: 1px solid var(--accent);
-  background: linear-gradient(180deg, #6ee7b7, #34d399);
-  color: #03261a;
+  background: linear-gradient(180deg, #f7a35c, #f58025);
+  color: #2d1403;
   padding: 10px 14px;
   border-radius: 10px;
   cursor: pointer;
@@ -150,9 +150,9 @@ button {
 }
 
 button.secondary {
-  background: #101a36;
-  border-color: #2f447c;
-  color: #c8d8ff;
+  background: #0a1f3e;
+  border-color: #2a5488;
+  color: #d9e9ff;
 }
 
 button:hover {
@@ -161,12 +161,12 @@ button:hover {
 
 .score-pill {
   margin: 0;
-  border: 1px solid #2f447c;
+  border: 1px solid #2a5488;
   border-radius: 999px;
   padding: 8px 12px;
   font-size: 13px;
-  color: #dce6ff;
-  background: #0f1733;
+  color: #ecf4ff;
+  background: #092043;
 }
 
 .risk-list {
@@ -184,15 +184,15 @@ button:hover {
 }
 
 .risk-warning {
-  border-color: #6f3044;
-  background: rgba(252, 165, 165, 0.09);
-  color: #fecdd3;
+  border-color: #ad5f2a;
+  background: rgba(245, 128, 37, 0.14);
+  color: #ffe2cc;
 }
 
 .risk-ok {
-  border-color: #2d5d4b;
-  background: rgba(110, 231, 183, 0.09);
-  color: #a7f3d0;
+  border-color: #2f6da7;
+  background: rgba(47, 109, 167, 0.18);
+  color: #d5e9ff;
 }
 
 @media (max-width: 960px) {
