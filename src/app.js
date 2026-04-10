@@ -95,12 +95,16 @@ exportMdBtn.addEventListener("click", () => {
   exportMarkdown(outputEditor.value);
 });
 
-exportPdfBtn.addEventListener("click", () => {
+exportPdfBtn.addEventListener("click", async () => {
   if (!outputEditor.value.trim()) {
     alert("Generate content before exporting.");
     return;
   }
-  exportPdf(outputEditor.value);
+  try {
+    await exportPdf(outputEditor.value);
+  } catch (err) {
+    alert(err?.message || String(err));
+  }
 });
 
 loadFintechExampleBtn.addEventListener("click", () => {
